@@ -6,7 +6,7 @@ type WindowDimensions = {
 };
 
 const useWindowDimensions = () => {
-  const windowAvailable = typeof window !== undefined;
+  const windowAvailable = typeof window !== "undefined";
 
   const getWindowDimensions = (): WindowDimensions => {
     const width = windowAvailable ? window.innerWidth : null;

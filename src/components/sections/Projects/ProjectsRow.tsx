@@ -1,34 +1,61 @@
 "use client";
 
 import { useState } from "react";
-import { PROJECTS } from "@/constants";
-import Project from "@/components/sections/Projects/SingleProject";
+import SingleProject from "@/components/sections/Projects/SingleProject";
 import { useWindowDimensions } from "@/hooks";
 import { BREAK_POINTS } from "@/constants";
+import { Project } from "@/types";
 
-type Action = "left" | "none" | "right";
-const actionsArray = ["right", "none", "left"] as const;
-const actionsToTranslateMap = {
-  right: 80,
-  none: 0,
-  left: -80,
+type Props = {
+  projects: Project[];
+  overflowSpace?: number;
 };
 
-const ProjectsRow = () => {
+type Action = "left" | "none" | "right";
+
+const getActionFromIndex = (index: number, noOfElements: number): Action => {
+  if (index === 0) return "right";
+  if (index === noOfElements - 1) return "left";
+  return "none";
+};
+
+const widthGreaterThanBreakpoint = (
+  width: number | null,
+  breakpoint: keyof typeof BREAK_POINTS
+) => {
+  return width && width > BREAK_POINTS[breakpoint];
+};
+
+const ProjectsRow = ({ projects, overflowSpace = 80 }: Props) => {
   const [currentAction, setCurrentAction] = useState<Action>("none");
 
   const { width } = useWindowDimensions();
 
+  const actionsToTranslateMap = {
+    right: overflowSpace,
+    none: 0,
+    left: -overflowSpace,
+  };
+
+  const isWidthGreaterThanBreakpoint = widthGreaterThanBreakpoint(width, "xl");
+
   const handleMouseEnter = (index: number) => {
-    if (width && width > BREAK_POINTS["lg"])
-      setCurrentAction(actionsArray[index]);
+    if (isWidthGreaterThanBreakpoint) {
+      setCurrentAction(getActionFromIndex(index, projects.length));
+    }
   };
 
   return (
     <div className="w-full relative mb-1">
-      <div className="lg:-mx-20 duration-300 transition-all px-1.5">
-        <div className="flex flex-col lg:flex-row gap-1.5">
-          {PROJECTS.map((project, index) => (
+      <div
+        style={{
+          marginLeft: isWidthGreaterThanBreakpoint ? -overflowSpace : 0,
+          marginRight: isWidthGreaterThanBreakpoint ? -overflowSpace : 0,
+        }}
+        className="duration-300 transition-all px-1.5"
+      >
+        <div className="flex flex-col xl:flex-row gap-1.5">
+          {projects.map((project, index) => (
             <div
               key={project.name}
               onMouseEnter={() => handleMouseEnter(index)}
@@ -38,7 +65,7 @@ const ProjectsRow = () => {
               }}
               className="flex-1 bg-cover rounded-2xl overflow-hidden border border-dim cursor-pointer transition-all duration-500 ease-in-out"
             >
-              <Project project={project} />
+              <SingleProject project={project} />
             </div>
           ))}
         </div>

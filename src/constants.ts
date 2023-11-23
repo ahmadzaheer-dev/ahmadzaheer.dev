@@ -90,16 +90,48 @@ export const PROJECTS: Project[] = [
     name: "Keramos Ceramica",
     description:
       "Keramos Ceramica is an e-commerce store for Ceramics based products. This project encompasses the website and admin dashboard to manage products",
-    imageURL: "/images/projects/keramos-ceramica.jpg",
-    overlayImageURL: "/images/projects/keramos-ceramica-overlay.jpg",
+    imageURL: "/project-2.png",
+    overlayImageURL: "/project-2.png",
     technologies: ["nextjs", "firebase", "tailwindcss"],
   },
   {
     name: "Instant Chat",
     description:
       "This project contains chat application that eases the day to day communication.",
-    imageURL: "/test-1.png",
-    overlayImageURL: "/test-1.png",
+    imageURL: "/project-1.png",
+    overlayImageURL: "/project-1.png",
+    technologies: ["nextjs", "SQL", "tailwindcss"],
+  },
+  {
+    name: "ahmadzaheer.dev",
+    description:
+      "This project contains my personal portfolio listing my experience, achievements, projects and skills. This also includes the admin side containing functionalities of blog editing using markdown, projects management etc.",
+    imageURL: "/project-2.png",
+    overlayImageURL: "/project-2.png",
+    technologies: ["nextjs", "tailwindcss"],
+  },
+  {
+    name: "ahmadzaheer.dev",
+    description:
+      "This project contains my personal portfolio listing my experience, achievements, projects and skills. This also includes the admin side containing functionalities of blog editing using markdown, projects management etc.",
+    imageURL: "/project-1.png",
+    overlayImageURL: "/project-1.png",
+    technologies: ["nextjs", "tailwindcss"],
+  },
+  {
+    name: "Keramos Ceramica",
+    description:
+      "Keramos Ceramica is an e-commerce store for Ceramics based products. This project encompasses the website and admin dashboard to manage products",
+    imageURL: "/project-2.png",
+    overlayImageURL: "/project-2.png",
+    technologies: ["nextjs", "firebase", "tailwindcss"],
+  },
+  {
+    name: "Instant Chat",
+    description:
+      "This project contains chat application that eases the day to day communication.",
+    imageURL: "/project-1.png",
+    overlayImageURL: "/project-1.png",
     technologies: ["nextjs", "SQL", "tailwindcss"],
   },
   {
