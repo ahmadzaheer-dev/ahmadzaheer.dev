@@ -11,11 +11,12 @@ type Props = {
 const SingleProject = ({ project }: Props) => {
   // TODO: Have to create View Modal for project with zoom to fit window animation
   return (
-    <div className="relative h-96 group">
+    <div className="relative group">
       <Image
         src={project.imageURL}
         alt={project.name + "-img"}
-        fill
+        width="1512"
+        height="982"
         style={{ objectFit: "cover", objectPosition: "top center" }}
       />
       <Image
@@ -28,7 +29,7 @@ const SingleProject = ({ project }: Props) => {
       <div className="absolute inset-0 bg-gradient-to-br from-primary/90 to-purpleHighlight/40 opacity-0 group-hover:opacity-100 duration-500 flex flex-col justify-between p-7 backdrop-blur-sm">
         <div>
           <h3 className={getHeadingStyles("h3")}>{project.name}</h3>
-          <p>{project.description}</p>
+          <p className="text-sm">{project.description}</p>
         </div>
         <div className="flex justify-between">
           <div>
