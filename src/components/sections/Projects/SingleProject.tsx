@@ -1,4 +1,4 @@
-import { Project } from "@/types";
+import { Project } from "@/types/types";
 import Image from "next/image";
 import { Github } from "lucide-react";
 import { ExternalLink } from "lucide-react";

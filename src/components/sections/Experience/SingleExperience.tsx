@@ -1,4 +1,4 @@
-import { Experience } from "@/types";
+import { Experience } from "@/types/types";
 import { getDateFormatted } from "@/lib/utils";
 import { getHeadingStyles } from "@/components/commonUi/utils";
 import { cn } from "@/lib/utils";

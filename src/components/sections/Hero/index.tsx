@@ -1,6 +1,5 @@
 import MaxWidthWrapper from "@/ui/MaxWidthWrapper";
 import { getHeadingStyles } from "@/ui/utils";
-import { cn } from "@/lib/utils";
 
 const Hero = () => {
   return (
