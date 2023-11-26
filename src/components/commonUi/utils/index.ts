@@ -6,5 +6,6 @@ export const getHeadingStyles = (variant: "h1" | "h2" | "h3" | "h4") => {
     "text-2xl sm:text-3xl lg:text-4xl font-semibold tracking-wide underline mb-5":
       variant === "h2",
     "text-xl sm:text-2xl lg:text-3xl font-bold mb-3": variant === "h3",
+    "text-base sm:text-lg lg:text-xl font-bold mb-3": variant === "h4",
   });
 };
