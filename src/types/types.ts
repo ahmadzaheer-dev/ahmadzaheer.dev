@@ -30,3 +30,18 @@ export type Project = {
   overlayImageURL: string;
   technologies: string[];
 };
+
+type SkillCategory =
+  | "frontend"
+  | "backend"
+  | "database"
+  | "fullstack"
+  | "language"
+  | "cloud"
+  | "versionControl";
+
+export type Skill = {
+  name: string;
+  category: SkillCategory;
+  skillLevel: number;
+};

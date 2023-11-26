@@ -1,4 +1,4 @@
-import { Experience, Project } from "@/types/types";
+import { Experience, Project, Skill } from "@/types/types";
 
 export const BREAK_POINTS = {
   // Same as tailwindcss configuration
@@ -142,4 +142,29 @@ export const PROJECTS: Project[] = [
     overlayImageURL: "/project-2.png",
     technologies: ["nextjs", "tailwindcss"],
   },
+];
+
+//TODO: Have to add logos of Technologies
+export const SKILLS: Skill[] = [
+  { name: "HTML5", category: "frontend", skillLevel: 80 },
+  { name: "CSS", category: "frontend", skillLevel: 90 },
+  { name: "TailwindCSS", category: "frontend", skillLevel: 90 },
+  { name: "Reactjs", category: "frontend", skillLevel: 90 },
+  { name: "Markdown", category: "frontend", skillLevel: 80 },
+  { name: "Nodejs", category: "backend", skillLevel: 70 },
+  { name: "Flask", category: "backend", skillLevel: 70 },
+  { name: "Webapp2", category: "backend", skillLevel: 80 },
+  { name: "Nextjs", category: "fullstack", skillLevel: 90 },
+  { name: "NextAuth", category: "fullstack", skillLevel: 70 },
+  { name: "NDB", category: "database", skillLevel: 90 },
+  { name: "MongoDB", category: "database", skillLevel: 80 },
+  { name: "Firestore", category: "database", skillLevel: 80 },
+  { name: "PostgresSQL", category: "database", skillLevel: 80 },
+  { name: "Prisma", category: "database", skillLevel: 80 },
+  { name: "Python", category: "language", skillLevel: 85 },
+  { name: "Javascript", category: "language", skillLevel: 90 },
+  { name: "C++", category: "language", skillLevel: 80 },
+  { name: "Typescript", category: "language", skillLevel: 90 },
+  { name: "GCP", category: "cloud", skillLevel: 70 },
+  { name: "Git & Github", category: "versionControl", skillLevel: 90 },
 ];
