@@ -8,6 +8,7 @@ export default async function Admin() {
 
   if (!session) redirect("/az-login");
 
+  // TODO: Admin Page Design and Implementation
   return (
     <div>
       <MaxWidthWrapper>
