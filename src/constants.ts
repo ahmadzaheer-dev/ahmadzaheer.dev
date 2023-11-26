@@ -1,4 +1,4 @@
-import { Experience, Project } from "@/types";
+import { Experience, Project } from "@/types/types";
 
 export const BREAK_POINTS = {
   // Same as tailwindcss configuration

@@ -4,7 +4,7 @@ import { useState } from "react";
 import SingleProject from "@/components/sections/Projects/SingleProject";
 import { useWindowDimensions } from "@/hooks";
 import { BREAK_POINTS } from "@/constants";
-import { Project } from "@/types";
+import { Project } from "@/types/types";
 
 type Props = {
   projects: Project[];

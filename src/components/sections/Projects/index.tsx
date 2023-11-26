@@ -2,7 +2,7 @@
 
 import { getHeadingStyles } from "@/components/commonUi/utils";
 import { PROJECTS } from "@/constants";
-import { Project } from "@/types";
+import { Project } from "@/types/types";
 import Button from "@/components/commonUi/Button";
 import { ExternalLink } from "lucide-react";
 import MaxWidthWrapper from "@/ui/MaxWidthWrapper";
