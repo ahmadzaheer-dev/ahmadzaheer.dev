@@ -10,12 +10,12 @@ type Props = {
 const SingleExperience = ({ experience }: Props) => {
   return (
     <div className="relative p-4 sm:p6 lg:p-8 mb-10 rounded-xl bg-dim/60 flex transition-all border border-dim">
-      <div className="text-sm mb-3 uppercase basis-1/6 pt-2 text-typo-body">
+      <div className="text-sm mb-3 uppercase basis-1/6 pt-2 text-typo-body hidden sm:inline">
         {`${getDateFormatted(experience.startDate)} - ${getDateFormatted(
           experience.endDate
         )}`}
       </div>
-      <div className="basis-5/6 px-3">
+      <div className="basis-5/6 flex-1 px-3">
         <h3
           className={cn(
             getHeadingStyles("h3"),
@@ -27,6 +27,11 @@ const SingleExperience = ({ experience }: Props) => {
         <h4 className="text-base lg:text-lg mb-2 font-semibold">
           {experience.companyName} - {experience.roleType}
         </h4>
+        <div className="text-sm mb-3 uppercase text-typo-body sm:hidden">
+          {`${getDateFormatted(experience.startDate)} - ${getDateFormatted(
+            experience.endDate
+          )}`}
+        </div>
 
         <p className="mb-3 text-typo-body">{experience.description}</p>
         <ul className="pl-3 mb-5">
