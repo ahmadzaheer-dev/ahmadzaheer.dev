@@ -34,7 +34,7 @@ const Contact = () => {
             <Socials />
           </div>
         </div>
-        <div className="basis-2/3 p-10 bg-bgColor -my-20 relative border border-dim rounded-lg flex flex-col justify-center">
+        <div className="basis-2/3 p-10 bg-bgColor -mb-20 lg:-my-20 relative border border-dim rounded-lg flex flex-col justify-center">
           <h3 className={getHeadingStyles("h3")}>Get In Touch.</h3>
           <ContactForm />
         </div>

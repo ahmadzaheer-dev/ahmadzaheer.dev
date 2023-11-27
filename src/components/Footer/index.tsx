@@ -9,25 +9,25 @@ const Footer = () => {
     <>
       <div className="bg-dim/60 pt-32 pb-10">
         <MaxWidthWrapper>
-          <div className="flex items-center">
-            <Logo />
-            <div className="basis-2/3">
-              <ul className="flex gap-8 items-center justify-end">
-                {NAV_ITEMS.map((item) => (
-                  <li
-                    key={item.name}
-                    className="mb-1 hover:text-primary-green transition-all"
-                  >
-                    <Link href={item.path}>{item.name}</Link>
-                  </li>
-                ))}
-              </ul>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+            <div className="mb-8 sm:mb-0 self-center">
+              <Logo />
             </div>
+            <ul className="flex flex-row gap-8 items-center justify-center sm:justify-end flex-wrap">
+              {NAV_ITEMS.map((item) => (
+                <li
+                  key={item.name}
+                  className="mb-1 hover:text-primary-green transition-all"
+                >
+                  <Link href={item.path}>{item.name}</Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </MaxWidthWrapper>
       </div>
       <div className="bg-dim/60 border-t border-dim">
-        <MaxWidthWrapper className="py-5 flex items-center justify-between">
+        <MaxWidthWrapper className="py-5 flex flex-col gap-5 sm:flex-row items-center justify-between">
           <span>© 2023 Ahmad Zaheer. All Rights Reserved.</span>
           <div>
             <Socials />

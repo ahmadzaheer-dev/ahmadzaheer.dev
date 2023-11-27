@@ -1,12 +1,12 @@
 import MaxWidthWrapper from "@/ui/MaxWidthWrapper";
 import { getHeadingStyles } from "@/ui/utils";
 import { cn } from "@/lib/utils";
-import Items from "@/components/sections/Bagpack/Items";
+import Items from "@/components/sections/TechBag/Items";
 
-const Bagpack = () => {
+const TechBag = () => {
   return (
     <div
-      id="bagpack"
+      id="techbag"
       className="py-10 relative overflow-hidden h-[calc(100vh-80px)] bg-dim/60"
     >
       <MaxWidthWrapper className="flex flex-col justify-center h-full">
@@ -16,7 +16,7 @@ const Bagpack = () => {
             "mb-8 sm:mb-12 lg:mb-10 text-center"
           )}
         >
-          Tech Bagpack
+          Tech Bag
         </h2>
         <p className="max-w-prose mx-auto text-center mb-10 text-typo-body">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam at
@@ -30,4 +30,4 @@ const Bagpack = () => {
   );
 };
 
-export default Bagpack;
+export default TechBag;

@@ -13,7 +13,7 @@ export const BREAK_POINTS = {
 export const NAV_ITEMS = [
   { name: "Experience" as const, path: "#experience" },
   { name: "Projects" as const, path: "#projects" },
-  { name: "Bagpack" as const, path: "#bagpack" },
+  { name: "Tech Bag" as const, path: "#techbag" },
   // { name: "Blog" as const, path: "#blog" },
   { name: "Contact" as const, path: "#contact" },
 ];

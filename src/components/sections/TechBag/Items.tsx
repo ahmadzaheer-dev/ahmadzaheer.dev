@@ -1,7 +1,7 @@
 "use client";
 
 import { SKILLS } from "@/constants";
-import Item from "@/components/sections/Bagpack/Item";
+import Item from "@/components/sections/TechBag/Item";
 import { useCursorCoordinatesInsideDiv } from "@/hooks";
 import { useRef } from "react";
 
