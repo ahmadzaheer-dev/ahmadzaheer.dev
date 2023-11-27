@@ -46,7 +46,7 @@ const ProjectsRow = ({ projects, overflowSpace = 80 }: Props) => {
   };
 
   return (
-    <div className="w-full relative mb-1">
+    <div className="w-full relative mb-1 last:mb-0">
       <div
         style={{
           marginLeft: isWidthGreaterThanBreakpoint ? -overflowSpace : 0,

@@ -1,4 +1,5 @@
 import { NAV_ITEMS } from "@/constants";
+import { LucideIcon } from "lucide-react";
 
 export type Expand<T> = T extends (...args: infer A) => infer R
   ? (...args: Expand<A>) => Expand<R>
@@ -21,14 +22,15 @@ export type Experience = {
   endDate: Date;
   description: string;
   points: { title?: string; description: string }[];
+  technologies: string[];
 };
 
 export type Project = {
   name: string;
   description: string;
   imageURL: string;
-  overlayImageURL: string;
   technologies: string[];
+  projectURL?: string;
 };
 
 type SkillCategory =
@@ -44,4 +46,10 @@ export type Skill = {
   name: string;
   category: SkillCategory;
   skillLevel: number;
+};
+
+export type Social = {
+  platform: string;
+  icon: LucideIcon;
+  url: string;
 };

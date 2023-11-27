@@ -17,16 +17,19 @@ const config: Config = {
         primary: {
           light: "#6054f7",
           DEFAULT: "#4237C9",
+          purple: "#CEAFFA",
+          yellow: "#F9DF78",
+          green: "#79E0C1",
         },
         bgColor: {
-          DEFAULT: "#10172A",
+          DEFAULT: "#212121",
         },
         typo: {
-          body: "#DBE9FE",
-          DEFAULT: "#DBE9FE",
+          body: "#D1D1D1",
+          DEFAULT: "#FFFFFF",
         },
         purpleHighlight: "#725AC1",
-        dim: "#263049",
+        dim: "#333333",
       },
     },
   },

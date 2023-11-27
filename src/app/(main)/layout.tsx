@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], fallback: ["roboto"] });
@@ -16,9 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-bgColor text-typo`}>
+      <body
+        className={`${inter.className} bg-bgColor text-typo text-sm lg:text-base`}
+      >
         <Nav />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

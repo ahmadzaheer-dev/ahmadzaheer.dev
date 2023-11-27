@@ -8,7 +8,7 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="py-10 relative before:bg-[radial-gradient(circle_at_35%,_var(--tw-gradient-stops))] before:from-purpleHighlight/30 before:to-transparent before:from-0% before:to-50% before:content-[''] before:absolute before:h-full before:w-full before:top-0 before:left-0 before:-z-10"
+      className="py-10 relative before:bg-[radial-gradient(circle_at_35%,_var(--tw-gradient-stops))] before:from-dim before:to-transparent before:from-0% before:to-50% before:content-[''] before:absolute before:h-full before:w-full before:top-0 before:left-0 before:-z-10"
     >
       <MaxWidthWrapper>
         <div>

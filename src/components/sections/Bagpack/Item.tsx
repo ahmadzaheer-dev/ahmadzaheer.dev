@@ -16,7 +16,7 @@ const Item = ({ item, mouseCoordinatesFromBL }: Props) => {
       <div
         onMouseEnter={() => setDisplayPopup(true)}
         onMouseLeave={() => setDisplayPopup(false)}
-        className="py-3 px-5 inline-block bg-bgColor rounded-md cursor-pointer hover:bg-primary-light transition-all"
+        className="py-3 px-5 inline-block bg-bgColor rounded-md cursor-pointer hover:bg-primary-green hover:text-bgColor transition-all font-semibold"
       >
         {item.name}
       </div>
@@ -25,8 +25,9 @@ const Item = ({ item, mouseCoordinatesFromBL }: Props) => {
           style={{
             bottom: mouseCoordinatesFromBL.y + 30,
             left: mouseCoordinatesFromBL.x,
+            marginLeft: "-112px",
           }}
-          className="absolute w-56 p-5 rounded-md bg-gradient-to-r z-10 from-primary to-primary-light"
+          className="absolute w-56 p-5 rounded-md z-10 bg-primary-green text-bgColor before:absolute before:content-[''] before:-inset-1 before:border before:border-primary-green/60 before:rounded-lg before:shadow-lg"
         >
           <h3 className={getHeadingStyles("h4")}>{item.name}</h3>
           <p className="text-sm font-bold mb-5 capitalize">{item.category}</p>
