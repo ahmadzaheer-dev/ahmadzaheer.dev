@@ -14,7 +14,10 @@ const Footer = () => {
             <div className="basis-2/3">
               <ul className="flex gap-8 items-center justify-end">
                 {NAV_ITEMS.map((item) => (
-                  <li className="mb-1 hover:text-primary-green transition-all">
+                  <li
+                    key={item.name}
+                    className="mb-1 hover:text-primary-green transition-all"
+                  >
                     <Link href={item.path}>{item.name}</Link>
                   </li>
                 ))}
