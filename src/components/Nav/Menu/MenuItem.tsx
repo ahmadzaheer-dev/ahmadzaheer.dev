@@ -12,9 +12,9 @@ const MenuItem = ({ item, isActive }: Props) => {
     <div key={item.name + "-nav-item"}>
       <Link
         className={cn(
-          "transition-all py-2 relative before:content-[''] before:absolute before:transition-all before:left-1/2 before:-translate-x-1/2 before:bottom-0 before:w-0 before:h-px before:bg-primary-light hover:before:w-4/5",
+          "transition-all py-2 relative before:content-[''] before:absolute before:transition-all before:left-1/2 before:-translate-x-1/2 before:bottom-0 before:w-0 before:h-px before:bg-primary-green hover:before:w-4/5",
           {
-            "text-primary before:w-4/5": isActive,
+            "text-primary-green before:w-4/5": isActive,
           }
         )}
         href={item.path}

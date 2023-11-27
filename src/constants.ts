@@ -1,4 +1,5 @@
-import { Experience, Project, Skill } from "@/types/types";
+import { Experience, Project, Skill, Social } from "@/types/types";
+import { FacebookIcon, GithubIcon, LinkedinIcon } from "lucide-react";
 
 export const BREAK_POINTS = {
   // Same as tailwindcss configuration
@@ -13,13 +14,13 @@ export const NAV_ITEMS = [
   { name: "Experience" as const, path: "#experience" },
   { name: "Projects" as const, path: "#projects" },
   { name: "Bagpack" as const, path: "#bagpack" },
-  { name: "Blog" as const, path: "#blog" },
+  // { name: "Blog" as const, path: "#blog" },
   { name: "Contact" as const, path: "#contact" },
 ];
 
 export const EXPERIENCE: Experience[] = [
   {
-    companyName: "Educative Inc.",
+    companyName: "Educative",
     position: "Software Engineer",
     roleType: "Full Time",
     startDate: new Date(2022, 6 - 1),
@@ -63,6 +64,20 @@ export const EXPERIENCE: Experience[] = [
           "Enabled Quick Availing (Logged out) of B2C Trial to minimise friction in the Trial avail process, thereby boosting conversion rate. Moreover, Improved the LCP and FCP for Trial Page.",
       },
     ],
+    technologies: [
+      "Reactjs",
+      "Nextjs",
+      "Stripe",
+      "Paypal",
+      "Braintree",
+      "BigQuery",
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "Tailwindcss",
+      "Webapp2",
+      "NDB",
+    ],
   },
   {
     companyName: "Digital Websters",
@@ -82,6 +97,7 @@ export const EXPERIENCE: Experience[] = [
           "Worked on the customizations of different themes using JavaScript, HTML and CSS ",
       },
     ],
+    technologies: ["Wordpress", "HTML", "CSS", "JavaScript"],
   },
 ];
 
@@ -90,57 +106,23 @@ export const PROJECTS: Project[] = [
     name: "Keramos Ceramica",
     description:
       "Keramos Ceramica is an e-commerce store for Ceramics based products. This project encompasses the website and admin dashboard to manage products",
-    imageURL: "/project-2.png",
-    overlayImageURL: "/project-2.png",
+    imageURL: "/images/projects/keramos-ceramica-overlay.jpg",
     technologies: ["nextjs", "firebase", "tailwindcss"],
+    projectURL: "keramos-ceramica.vercel.app",
   },
   {
-    name: "Instant Chat",
+    name: "Ahmad Zaheer",
     description:
-      "This project contains chat application that eases the day to day communication.",
-    imageURL: "/project-1.png",
-    overlayImageURL: "/project-1.png",
-    technologies: ["nextjs", "SQL", "tailwindcss"],
-  },
-  {
-    name: "ahmadzaheer.dev",
-    description:
-      "This project contains my personal portfolio listing my experience, achievements, projects and skills. This also includes the admin side containing functionalities of blog editing using markdown, projects management etc.",
-    imageURL: "/project-2.png",
-    overlayImageURL: "/project-2.png",
-    technologies: ["nextjs", "tailwindcss"],
-  },
-  {
-    name: "ahmadzaheer.dev",
-    description:
-      "This project contains my personal portfolio listing my experience, achievements, projects and skills. This also includes the admin side containing functionalities of blog editing using markdown, projects management etc.",
-    imageURL: "/project-1.png",
-    overlayImageURL: "/project-1.png",
-    technologies: ["nextjs", "tailwindcss"],
-  },
-  {
-    name: "Keramos Ceramica",
-    description:
-      "Keramos Ceramica is an e-commerce store for Ceramics based products. This project encompasses the website and admin dashboard to manage products",
-    imageURL: "/project-2.png",
-    overlayImageURL: "/project-2.png",
-    technologies: ["nextjs", "firebase", "tailwindcss"],
-  },
-  {
-    name: "Instant Chat",
-    description:
-      "This project contains chat application that eases the day to day communication.",
-    imageURL: "/project-1.png",
-    overlayImageURL: "/project-1.png",
-    technologies: ["nextjs", "SQL", "tailwindcss"],
-  },
-  {
-    name: "ahmadzaheer.dev",
-    description:
-      "This project contains my personal portfolio listing my experience, achievements, projects and skills. This also includes the admin side containing functionalities of blog editing using markdown, projects management etc.",
-    imageURL: "/project-2.png",
-    overlayImageURL: "/project-2.png",
-    technologies: ["nextjs", "tailwindcss"],
+      "ahmadzaheer.dev is my personal portfolio. It consists of an elegant dark theme developed using Nextjs. For managing content and blogs, have developed Admin panel which is authenticated using NextAuthjs. Morever, for storing content PostgresSQL is used with Prisma ORM.",
+    imageURL: "/images/projects/ahmadzaheer-dev.jpg",
+    technologies: [
+      "nextjs",
+      "PostgresSQL",
+      "tailwindcss",
+      "Prisma",
+      "NextAuth",
+    ],
+    projectURL: "ahmadzaheer.dev",
   },
 ];
 
@@ -160,11 +142,17 @@ export const SKILLS: Skill[] = [
   { name: "MongoDB", category: "database", skillLevel: 80 },
   { name: "Firestore", category: "database", skillLevel: 80 },
   { name: "PostgresSQL", category: "database", skillLevel: 80 },
-  { name: "Prisma", category: "database", skillLevel: 80 },
+  { name: "Prisma ORM", category: "database", skillLevel: 80 },
   { name: "Python", category: "language", skillLevel: 85 },
   { name: "Javascript", category: "language", skillLevel: 90 },
   { name: "C++", category: "language", skillLevel: 80 },
   { name: "Typescript", category: "language", skillLevel: 90 },
   { name: "GCP", category: "cloud", skillLevel: 70 },
   { name: "Git & Github", category: "versionControl", skillLevel: 90 },
+];
+
+export const SOCIALS: Social[] = [
+  { platform: "Github", icon: GithubIcon, url: "" },
+  { platform: "Linkedin", icon: LinkedinIcon, url: "" },
+  { platform: "Facebook", icon: FacebookIcon, url: "" },
 ];

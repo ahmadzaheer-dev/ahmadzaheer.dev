@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Menu from "@/components/Nav/Menu";
 import MaxWidthWrapper from "@/ui/MaxWidthWrapper";
 import { cn } from "@/lib/utils";
+import Logo from "@/components/Logo";
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -24,17 +25,12 @@ const Nav = () => {
       className={cn(
         "sticky h-24 top-0 border-b border-dim transition-all z-50",
         {
-          "bg-bgColor/95 h-20": scrolled,
+          "bg-bgColor h-20": scrolled,
         }
       )}
     >
       <MaxWidthWrapper className="flex items-center justify-between h-full">
-        <div className="text-2xl font-semibold">
-          <span className="text-transparent bg-gradient-to-r from-primary to-primary-light bg-clip-text">
-            ahmadzaheer
-          </span>
-          .dev
-        </div>
+        <Logo />
         <Menu />
       </MaxWidthWrapper>
     </div>
