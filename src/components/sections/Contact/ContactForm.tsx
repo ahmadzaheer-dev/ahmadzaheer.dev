@@ -31,7 +31,7 @@ const ContactForm = () => {
         name="name"
         type="text"
         required
-        className="p-2 border border-dim focus:border-white outline-none bg-transparent w-full rounded-md mb-5 autofill:bg-transparent"
+        className="p-2.5 border border-dim focus:border-white outline-none bg-transparent w-full rounded-md mb-5 autofill:bg-transparent"
         value={name}
         onChange={handleChange}
       />
@@ -42,7 +42,7 @@ const ContactForm = () => {
         name="email"
         type="email"
         required
-        className="p-2 border border-dim focus:border-white outline-none bg-transparent w-full rounded-md mb-5"
+        className="p-2.5 border border-dim focus:border-white outline-none bg-transparent w-full rounded-md mb-5"
         value={email}
         onChange={handleChange}
       />
@@ -52,14 +52,14 @@ const ContactForm = () => {
       <textarea
         name="message"
         required
-        className="p-2 border border-dim focus:border-white outline-none bg-transparent w-full rounded-md mb-5"
+        className="p-2.5 border border-dim focus:border-white outline-none bg-transparent w-full rounded-md mb-5"
         rows={5}
         value={message}
         onChange={handleChange}
       />
       <input
         type="submit"
-        className="px-4 py-3 rounded-md transition-all bg-primary-green hover:bg-white text-bgColor font-semibold w-full text-center cursor-pointer"
+        className="p-2.5 rounded-md transition-all bg-white hover:bg-primary-green text-bgColor font-semibold w-full text-center cursor-pointer"
         value="Submit"
       />
     </form>

@@ -30,7 +30,7 @@ const Nav = () => {
       )}
     >
       <MaxWidthWrapper className="flex items-center justify-between h-full">
-        <Logo />
+        <Logo hideTextOnMobile />
         <Menu />
       </MaxWidthWrapper>
     </div>

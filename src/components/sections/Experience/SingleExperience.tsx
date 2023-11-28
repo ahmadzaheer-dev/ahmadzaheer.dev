@@ -50,7 +50,7 @@ const SingleExperience = ({ experience }: Props) => {
               key={technology}
               className="py-1.5 px-3 bg-primary-green/20 text-primary-green rounded-md"
             >
-              {technology}
+              #{technology}
             </div>
           ))}
         </div>

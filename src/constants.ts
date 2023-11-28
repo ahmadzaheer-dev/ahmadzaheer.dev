@@ -56,7 +56,7 @@ export const EXPERIENCE: Experience[] = [
       {
         title: "Subscription Reactivation",
         description:
-          "mplemented the Subscription Reactivation feature for Braintree payment processor (Backend and Frontend).",
+          "Implemented the Subscription Reactivation feature for Braintree payment processor (Backend and Frontend).",
       },
       {
         title: "Trial Page",
