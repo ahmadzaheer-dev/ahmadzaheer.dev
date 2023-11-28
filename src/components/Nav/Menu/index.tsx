@@ -19,14 +19,16 @@ const Menu = () => {
 
   return (
     <nav>
-      <div className="hidden lg:flex gap-8 items-center">
-        {NAV_ITEMS.map((item) => (
-          <MenuItem
-            key={item.name + "-nav-item"}
-            item={item}
-            isActive={currentPathHash === item.path}
-          />
-        ))}
+      <div className="flex gap-8 items-center">
+        <div className="gap-8 items-center hidden lg:flex">
+          {NAV_ITEMS.map((item) => (
+            <MenuItem
+              key={item.name + "-nav-item"}
+              item={item}
+              isActive={currentPathHash === item.path}
+            />
+          ))}
+        </div>
         <Button
           onClick={() => {}}
           text="Download CV"

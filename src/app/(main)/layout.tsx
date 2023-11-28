@@ -1,10 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Ubuntu } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], fallback: ["roboto"] });
+const ubuntu = Ubuntu({
+  weight: ["300", "400", "500", "700"],
+  subsets: ["latin"],
+  fallback: ["roboto"],
+});
 
 export const metadata: Metadata = {
   title: "Ahmad Zaheer",
@@ -18,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-bgColor text-typo text-sm lg:text-base`}
+        className={`${ubuntu.className} bg-bgColor text-typo text-sm lg:text-base`}
       >
         <Nav />
         <main>{children}</main>

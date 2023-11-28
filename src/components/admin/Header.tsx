@@ -11,6 +11,7 @@ import {
   Terminal,
 } from "lucide-react";
 import { useSession } from "next-auth/react";
+import Logo from "@/components/Logo";
 
 const Header = () => {
   const session = useSession();
@@ -21,9 +22,7 @@ const Header = () => {
     <header className="h-20 flex items-center justify-center border-b border-dim">
       <MaxWidthWrapper>
         <div className="flex justify-between items-center">
-          <div className="text-3xl font-semibold">
-            <span className="text-primary-light">az.</span>admin
-          </div>
+          <Logo />
           {loading && (
             <nav className="flex items-center gap-5">
               <div className="h-8 w-48 bg-dim animate-pulse"></div>
@@ -33,21 +32,21 @@ const Header = () => {
             <nav className="flex items-center gap-8">
               <Link
                 href="/az-admin/projects"
-                className="hover:text-primary-light transition-all flex gap-2 items-center"
+                className="hover:text-primary-green transition-all flex gap-2 items-center"
               >
                 <LayoutTemplateIcon size={18} />
                 Projects
               </Link>
               <Link
                 href="/az-admin/projects"
-                className="hover:text-primary-light transition-all flex gap-2 items-center"
+                className="hover:text-primary-green transition-all flex gap-2 items-center"
               >
                 <Terminal size={18} />
                 Skills
               </Link>
               <Link
                 href="/az-admin/projects"
-                className="hover:text-primary-light transition-all flex gap-2 items-center"
+                className="hover:text-primary-green transition-all flex gap-2 items-center"
               >
                 <BookText size={18} />
                 Blog

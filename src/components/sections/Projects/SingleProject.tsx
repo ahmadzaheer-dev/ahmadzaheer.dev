@@ -24,7 +24,7 @@ const SingleProject = ({ project }: Props) => {
         <div className="text-bgColor">
           <h3 className={getHeadingStyles("h3")}>{project.name}</h3>
         </div>
-        <div className="flex justify-between">
+        <div className="flex justify-between items-center">
           <div>
             {project.technologies.map((technology) => (
               <span

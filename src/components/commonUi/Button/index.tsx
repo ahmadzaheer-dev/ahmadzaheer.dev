@@ -20,7 +20,7 @@ const Button = ({
     <button
       onClick={onClick}
       className={cn("flex gap-3 px-4 py-3 rounded-md transition-all", {
-        "bg-primary-green hover:bg-white text-bgColor font-semibold":
+        "hover:bg-primary-green bg-white text-bgColor font-semibold":
           variant === "filled",
         "border border-primary-green text-primary-green hover:text-typo hover:border-primary-green hover:bg-primary-green":
           variant === "outlined",

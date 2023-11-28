@@ -8,7 +8,7 @@ import Socials from "@/components/sections/Contact/Socials";
 const Contact = () => {
   return (
     <div id="contact" className="bg-primary-green pt-px ">
-      <MaxWidthWrapper className="flex flex-col lg:flex-row">
+      <MaxWidthWrapper className="flex flex-col lg:flex-row relative before:content-['<contact>'] before:text-primary-green before:absolute before:w-full before:max-w-screen-xl before:left-1/2 before:-translate-x-1/2 before:-top-10 before:italic after:content-['</contact>'] after:text-primary-green after:absolute after:w-full after:max-w-screen-xl after:left-1/2 after:-translate-x-1/2 after:-bottom-28 lg:after:-bottom-10 after:italic">
         <div className="basis-1/3 py-10 pr-10 text-bgColor text-center lg:text-left">
           <h2 className={cn(getHeadingStyles("h2"), "mb-10")}>Contact</h2>
           <div className="mb-5">

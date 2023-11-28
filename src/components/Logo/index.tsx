@@ -1,4 +1,9 @@
-const Logo = () => {
+import { cn } from "@/lib/utils";
+type Props = {
+  hideTextOnMobile?: boolean;
+};
+
+const Logo = ({ hideTextOnMobile = false }: Props) => {
   return (
     <div className="text-2xl font-semibold flex gap-5 items-center">
       <svg
@@ -16,7 +21,7 @@ const Logo = () => {
         />
       </svg>
 
-      <div className="overflow-hidden">
+      <div className={cn({ "hidden lg:inline-block": hideTextOnMobile })}>
         ahmadzaheer<span className="text-primary-green">.dev</span>
       </div>
     </div>

@@ -28,7 +28,10 @@ const ProjectsRow = dynamic(
 
 const Projects = () => {
   return (
-    <div id="projects" className="py-10 relative overflow-hidden">
+    <div
+      id="projects"
+      className="py-20 relative overflow-hidden before:content-['<projects>'] before:text-primary-green before:absolute before:w-11/12 before:max-w-screen-xl before:left-1/2 before:-translate-x-1/2 before:top-10 before:italic after:content-['</projects>'] after:text-primary-green after:absolute after:w-11/12 after:max-w-screen-xl after:left-1/2 after:-translate-x-1/2 after:bottom-10 after:italic"
+    >
       <MaxWidthWrapper>
         <h2
           className={cn(

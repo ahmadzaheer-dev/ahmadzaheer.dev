@@ -22,7 +22,7 @@ export default function Login() {
         <input
           placeholder="Email"
           type="email"
-          className="p-3 outline-none border border-dim rounded-sm w-full bg-dim mb-5"
+          className="p-2.5 border border-dim focus:border-white outline-none bg-transparent w-full rounded-md mb-5 autofill:bg-transparent"
           value={data.email}
           onChange={(e) => setData({ ...data, email: e.target.value })}
           required
@@ -30,13 +30,13 @@ export default function Login() {
         <input
           placeholder="Password"
           type="text"
-          className="p-3 outline-none border border-dim rounded-sm w-full bg-dim mb-5"
+          className="p-2.5 border border-dim focus:border-white outline-none bg-transparent w-full rounded-md mb-5 autofill:bg-transparent"
           value={data.password}
           onChange={(e) => setData({ ...data, password: e.target.value })}
         />
         <input
           type="submit"
-          className="px-4 py-3 rounded-md transition-all bg-primary-light hover:bg-primary text-typo w-full mb-3 cursor-pointer"
+          className="p-2.5 rounded-md transition-all bg-white hover:bg-primary-green text-bgColor font-semibold w-full mb-3 cursor-pointer"
           value="Login"
         />
       </form>
