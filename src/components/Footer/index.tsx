@@ -2,7 +2,7 @@ import MaxWidthWrapper from "@/ui/MaxWidthWrapper";
 import { NAV_ITEMS } from "@/constants";
 import Link from "next/link";
 import Socials from "@/components/sections/Contact/Socials";
-import Logo from "@/components/Logo";
+import Logo from "@/ui/Logo";
 
 const Footer = () => {
   return (

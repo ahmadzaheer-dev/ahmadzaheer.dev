@@ -11,11 +11,11 @@ export const BREAK_POINTS = {
 };
 
 export const NAV_ITEMS = [
-  { name: "Experience" as const, path: "#experience" },
-  { name: "Projects" as const, path: "#projects" },
-  { name: "Tech Bag" as const, path: "#techbag" },
-  // { name: "Blog" as const, path: "#blog" },
-  { name: "Contact" as const, path: "#contact" },
+  { name: "Experience" as const, path: "/#experience" },
+  { name: "Projects" as const, path: "/#projects" },
+  { name: "Tech Bag" as const, path: "/#techbag" },
+  // { name: "Blog" as const, path: "/#blog" },
+  { name: "Contact" as const, path: "/#contact" },
 ];
 
 export const EXPERIENCE: Experience[] = [
@@ -152,7 +152,14 @@ export const SKILLS: Skill[] = [
 ];
 
 export const SOCIALS: Social[] = [
-  { platform: "Github", icon: GithubIcon, url: "" },
-  { platform: "Linkedin", icon: LinkedinIcon, url: "" },
-  { platform: "Facebook", icon: FacebookIcon, url: "" },
+  {
+    platform: "Github",
+    icon: GithubIcon,
+    url: "https://github.com/ahmadzaheer-dev",
+  },
+  {
+    platform: "Linkedin",
+    icon: LinkedinIcon,
+    url: "https://www.linkedin.com/in/ahmad-zaheer/",
+  },
 ];

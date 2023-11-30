@@ -22,10 +22,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ubuntu.className} bg-bgColor text-typo text-sm lg:text-base`}
+        className={`${ubuntu.className} bg-bgColor text-typo text-sm lg:text-base flex flex-col min-h-[100vh]`}
       >
         <Nav />
-        <main>{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>
