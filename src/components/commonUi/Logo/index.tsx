@@ -1,11 +1,12 @@
 import { cn } from "@/lib/utils";
+import Link from "next/link";
 type Props = {
   hideTextOnMobile?: boolean;
 };
 
 const Logo = ({ hideTextOnMobile = false }: Props) => {
   return (
-    <div className="text-2xl font-semibold flex gap-5 items-center">
+    <Link href="/" className="text-2xl font-semibold flex gap-5 items-center">
       <svg
         width="46"
         height="46"
@@ -24,7 +25,7 @@ const Logo = ({ hideTextOnMobile = false }: Props) => {
       <div className={cn({ "hidden lg:inline-block": hideTextOnMobile })}>
         ahmadzaheer<span className="text-primary-green">.dev</span>
       </div>
-    </div>
+    </Link>
   );
 };
 

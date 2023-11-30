@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Menu from "@/components/Nav/Menu";
 import MaxWidthWrapper from "@/ui/MaxWidthWrapper";
 import { cn } from "@/lib/utils";
-import Logo from "@/components/Logo";
+import Logo from "@/ui/Logo";
 
 const Nav = () => {
   const [scrolled, setScrolled] = useState(false);

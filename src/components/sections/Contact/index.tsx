@@ -13,7 +13,7 @@ const Contact = () => {
           <h2 className={cn(getHeadingStyles("h2"), "mb-10")}>Contact</h2>
           <div className="mb-5">
             <div className="flex gap-3 items-center flex-col lg:flex-row">
-              <div className="p-2 rounded-full bg-white border border-bgColor">
+              <div className="p-2 rounded-md bg-white border border-bgColor">
                 <MailIcon size={18} />
               </div>
               <h4 className={cn(getHeadingStyles("h4"), "mb-0")}>Email</h4>
@@ -22,7 +22,7 @@ const Contact = () => {
           </div>
           <div className="mb-5">
             <div className="flex gap-3 items-center flex-col lg:flex-row">
-              <div className="p-2 rounded-full bg-white border border-bgColor">
+              <div className="p-2 rounded-md bg-white border border-bgColor">
                 <PhoneIcon size={18} />
               </div>
               <h4 className={cn(getHeadingStyles("h4"), "mb-0")}>Phone</h4>

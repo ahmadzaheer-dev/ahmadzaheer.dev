@@ -11,7 +11,7 @@ import {
   Terminal,
 } from "lucide-react";
 import { useSession } from "next-auth/react";
-import Logo from "@/components/Logo";
+import Logo from "@/ui/Logo";
 
 const Header = () => {
   const session = useSession();
