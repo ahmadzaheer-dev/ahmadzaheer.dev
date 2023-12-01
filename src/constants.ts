@@ -1,5 +1,5 @@
 import { Experience, Project, Skill, Social } from "@/types/types";
-import { FacebookIcon, GithubIcon, LinkedinIcon } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "lucide-react";
 
 export const BREAK_POINTS = {
   // Same as tailwindcss configuration
@@ -126,7 +126,6 @@ export const PROJECTS: Project[] = [
   },
 ];
 
-//TODO: Have to add logos of Technologies
 export const SKILLS: Skill[] = [
   { name: "HTML5", category: "frontend", skillLevel: 80 },
   { name: "CSS", category: "frontend", skillLevel: 90 },
