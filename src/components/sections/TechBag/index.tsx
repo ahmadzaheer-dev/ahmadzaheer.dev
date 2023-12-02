@@ -19,10 +19,8 @@ const TechBag = () => {
           Tech Bag
         </h2>
         <p className="max-w-prose mx-auto text-center mb-10 text-typo-body">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam at
-          impedit facere facilis vero aliquam ad. Sequi consectetur possimus
-          quis ea iste eius corrupti. Officiis vitae ab perferendis dolor
-          nesciunt.
+          Here is the list of technologies and tech stack in which I have
+          previously worked.
         </p>
         <Items />
       </MaxWidthWrapper>
