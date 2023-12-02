@@ -3,8 +3,8 @@
 import { useState } from "react";
 import SingleProject from "@/components/sections/Projects/SingleProject";
 import { useWindowDimensions } from "@/hooks";
-import { BREAK_POINTS } from "@/constants";
 import { Project } from "@/types/types";
+import { widthGreaterThanBreakpoint } from "@/lib/utils";
 
 type Props = {
   projects: Project[];
@@ -19,13 +19,6 @@ const getActionFromIndex = (index: number, noOfElements: number): Action => {
   return "none";
 };
 
-const widthGreaterThanBreakpoint = (
-  width: number | null,
-  breakpoint: keyof typeof BREAK_POINTS
-) => {
-  return width && width > BREAK_POINTS[breakpoint];
-};
-
 const ProjectsRow = ({ projects, overflowSpace = 80 }: Props) => {
   const [currentAction, setCurrentAction] = useState<Action>("none");
 
@@ -37,10 +30,10 @@ const ProjectsRow = ({ projects, overflowSpace = 80 }: Props) => {
     left: -overflowSpace,
   };
 
-  const isWidthGreaterThanBreakpoint = widthGreaterThanBreakpoint(width, "xl");
+  const isWidthGreaterThanXl = widthGreaterThanBreakpoint(width, "xl");
 
   const handleMouseEnter = (index: number) => {
-    if (isWidthGreaterThanBreakpoint) {
+    if (isWidthGreaterThanXl) {
       setCurrentAction(getActionFromIndex(index, projects.length));
     }
   };
@@ -49,8 +42,8 @@ const ProjectsRow = ({ projects, overflowSpace = 80 }: Props) => {
     <div className="w-full relative mb-1 last:mb-0">
       <div
         style={{
-          marginLeft: isWidthGreaterThanBreakpoint ? -overflowSpace : 0,
-          marginRight: isWidthGreaterThanBreakpoint ? -overflowSpace : 0,
+          marginLeft: isWidthGreaterThanXl ? -overflowSpace : 0,
+          marginRight: isWidthGreaterThanXl ? -overflowSpace : 0,
         }}
         className="duration-300 transition-all px-1.5"
       >
