@@ -23,7 +23,7 @@ const Logo = ({ hideTextOnMobile = false }: Props) => {
       </svg>
 
       <div className={cn({ "hidden lg:inline-block": hideTextOnMobile })}>
-        ahmadzaheer<span className="text-primary-green">.dev</span>
+        ahmad<span className="text-primary-green">zaheer</span>
       </div>
     </Link>
   );
