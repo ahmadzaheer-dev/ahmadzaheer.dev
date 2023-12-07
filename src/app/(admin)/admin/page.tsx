@@ -6,7 +6,7 @@ import MaxWidthWrapper from "@/ui/MaxWidthWrapper";
 export default async function Admin() {
   const session = await getServerSession(authOptions);
 
-  if (!session) redirect("/az-login");
+  if (!session) redirect("/login");
 
   // TODO: Admin Page Design and Implementation
   return (

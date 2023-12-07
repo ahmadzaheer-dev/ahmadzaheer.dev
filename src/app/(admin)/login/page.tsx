@@ -13,7 +13,7 @@ export default function Login() {
         className="w-full max-w-screen-sm p-10 rounded-md border border-dim -mt-20"
         onSubmit={(e) => {
           e.preventDefault();
-          signIn("credentials", { ...data, callbackUrl: "/az-admin" });
+          signIn("credentials", { ...data, callbackUrl: "/admin" });
         }}
       >
         <h2 className={cn(getHeadingStyles("h2"), "text-center mb-8")}>

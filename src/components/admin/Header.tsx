@@ -31,27 +31,28 @@ const Header = () => {
           {authenticated && (
             <nav className="flex items-center gap-8">
               <Link
-                href="/az-admin/projects"
+                href="/admin/projects"
                 className="hover:text-primary-green transition-all flex gap-2 items-center"
               >
                 <LayoutTemplateIcon size={18} />
                 Projects
               </Link>
               <Link
-                href="/az-admin/projects"
+                href="/admin/projects"
                 className="hover:text-primary-green transition-all flex gap-2 items-center"
               >
                 <Terminal size={18} />
                 Skills
               </Link>
               <Link
-                href="/az-admin/projects"
+                href="/admin/projects"
                 className="hover:text-primary-green transition-all flex gap-2 items-center"
               >
                 <BookText size={18} />
                 Blog
               </Link>
               <Button
+                type="button"
                 text="SignOut"
                 onClick={() => {
                   signOut();

@@ -9,7 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(at 80%, var(--tw-gradient-stops))",
+        "gradient-radial":
+          "radial-gradient(at top left, var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
@@ -22,14 +23,14 @@ const config: Config = {
           green: "#79E0C1",
         },
         bgColor: {
-          DEFAULT: "#212121",
+          DEFAULT: "#1E2228",
         },
         typo: {
           body: "#D1D1D1",
           DEFAULT: "#FFFFFF",
         },
         purpleHighlight: "#725AC1",
-        dim: "#333333",
+        dim: "#2C313B",
       },
     },
   },

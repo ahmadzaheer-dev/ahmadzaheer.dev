@@ -114,7 +114,7 @@ export const PROJECTS: Project[] = [
     name: "Ahmad Zaheer",
     description:
       "ahmadzaheer.dev is my personal portfolio. It consists of an elegant dark theme developed using Nextjs. For managing content and blogs, have developed Admin panel which is authenticated using NextAuthjs. Morever, for storing content PostgresSQL is used with Prisma ORM.",
-    imageURL: "/images/projects/ahmadzaheer-dev.jpg",
+    imageURL: "/images/projects/ahmadzaheer-dev.png",
     technologies: [
       "nextjs",
       "PostgresSQL",
@@ -152,7 +152,7 @@ export const SKILLS: Skill[] = [
 
 export const SOCIALS: Social[] = [
   {
-    platform: "Github",
+    platform: "GitHub",
     icon: GithubIcon,
     url: "https://github.com/ahmadzaheer-dev",
   },
