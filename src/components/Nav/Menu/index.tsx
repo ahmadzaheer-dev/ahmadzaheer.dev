@@ -18,30 +18,33 @@ const Menu = () => {
   // TODO: Have to activate links depending upon scroll position
 
   return (
-    <nav>
-      <div className="flex gap-8 items-center">
-        <div className="gap-8 items-center hidden lg:flex">
-          {NAV_ITEMS.map((item) => (
-            <MenuItem
-              key={item.name + "-nav-item"}
-              item={item}
-              isActive={currentPathHash === item.path}
-            />
-          ))}
+    <>
+      <nav>
+        <div className="flex gap-8 items-center">
+          <div className="gap-8 items-center hidden lg:flex">
+            {NAV_ITEMS.map((item) => (
+              <MenuItem
+                key={item.name + "-nav-item"}
+                item={item}
+                isActive={currentPathHash === item.path}
+              />
+            ))}
+          </div>
         </div>
-        <Button
-          onClick={() => {}}
-          text="Download CV"
-          Icon={ArrowDownToLine}
-          iconProps={{ size: 20 }}
-        />
-      </div>
-      <div className="block lg:hidden">
-        {
-          // TODO: Have to implement mobile nav here
-        }
-      </div>
-    </nav>
+        <div className="block lg:hidden">
+          {
+            // TODO: Have to implement mobile nav here
+          }
+        </div>
+      </nav>
+      <Button
+        type="button"
+        onClick={() => {}}
+        text="Download CV"
+        Icon={ArrowDownToLine}
+        iconProps={{ size: 20 }}
+      />
+    </>
   );
 };
 
