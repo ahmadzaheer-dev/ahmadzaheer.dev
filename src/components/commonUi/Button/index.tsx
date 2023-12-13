@@ -1,13 +1,17 @@
 import type { LucideIcon, LucideProps } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import { HTMLAttributeAnchorTarget } from "react";
 
 type Props = {
   text: string;
   Icon?: LucideIcon;
   iconProps?: LucideProps;
   variant?: "filled" | "outlined" | "ghost" | "secondary";
-} & ({ type: "button"; onClick: () => void } | { type: "link"; href: string });
+} & (
+  | { type: "button"; onClick: () => void }
+  | { type: "link"; href: string; target?: HTMLAttributeAnchorTarget }
+);
 
 const Button = (props: Props) => {
   const { text, Icon, iconProps, variant = "filled" } = props;
@@ -28,7 +32,11 @@ const Button = (props: Props) => {
           <span>{text}</span>
         </button>
       ) : (
-        <Link href={props.href} className={className}>
+        <Link
+          href={props.href}
+          className={className}
+          target={props.target ? props.target : "_self"}
+        >
           {Icon && <Icon {...iconProps} />}
           <span>{text}</span>
         </Link>

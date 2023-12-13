@@ -16,7 +16,7 @@ const TechBag = () => {
             "mb-8 sm:mb-12 lg:mb-10 text-center"
           )}
         >
-          Tech Bag
+          Skills & Technologies
         </h2>
         <p className="max-w-prose mx-auto text-center mb-10 text-typo-body">
           Here is the list of technologies and tech stack in which I have
