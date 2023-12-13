@@ -59,9 +59,10 @@ const Hero = () => {
               variant="secondary"
             />
             <Button
-              type="button"
-              onClick={() => {}}
+              type="link"
+              href="/documents/ahmadzaheer-resume.pdf"
               text="Download CV"
+              target="_blank"
               Icon={ArrowDownToLine}
               iconProps={{ size: 20 }}
             />

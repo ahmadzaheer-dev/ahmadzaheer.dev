@@ -22,9 +22,12 @@ const Nav = () => {
 
   return (
     <div
-      className={cn("sticky h-24 top-0 transition-all z-50", {
-        "bg-bgColor h-20": scrolled,
-      })}
+      className={cn(
+        "sticky h-24 top-0 transition-all z-50 border-b border-dim",
+        {
+          "bg-bgColor h-20": scrolled,
+        }
+      )}
     >
       <MaxWidthWrapper className="flex items-center justify-between h-full">
         <Logo hideTextOnMobile />
