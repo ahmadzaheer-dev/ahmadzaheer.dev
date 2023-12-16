@@ -4,6 +4,7 @@ import { getHeadingStyles } from "@/ui/utils";
 import { cn } from "@/lib/utils";
 import ContactForm from "@/components/sections/Contact/ContactForm";
 import Socials from "@/components/sections/Contact/Socials";
+import Link from "next/link";
 
 const Contact = () => {
   return (
@@ -18,7 +19,9 @@ const Contact = () => {
               </div>
               <h4 className={cn(getHeadingStyles("h4"), "mb-0")}>Email</h4>
             </div>
-            <p className="font-bold">ahmadzaheerdev@gmail.com</p>
+            <Link href="mailto:ahmadzaheerdev@gmail.com" className="font-bold">
+              ahmadzaheerdev@gmail.com
+            </Link>
           </div>
           <div className="mb-5">
             <div className="flex gap-3 items-center flex-col lg:flex-row">
@@ -27,7 +30,9 @@ const Contact = () => {
               </div>
               <h4 className={cn(getHeadingStyles("h4"), "mb-0")}>Phone</h4>
             </div>
-            <p className="font-bold">+923074754199</p>
+            <Link href="tel:+923074754199" className="font-bold">
+              +923074754199
+            </Link>
           </div>
           <div className="mb-5">
             <h4 className={getHeadingStyles("h4")}>Connect</h4>
