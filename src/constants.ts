@@ -108,7 +108,7 @@ export const PROJECTS: Project[] = [
       "Keramos Ceramica is an e-commerce store for Ceramics based products. This project encompasses the website and admin dashboard to manage products",
     imageURL: "/images/projects/keramos-ceramica-overlay.jpg",
     technologies: ["nextjs", "firebase", "tailwindcss"],
-    projectURL: "keramos-ceramica.vercel.app",
+    projectURL: "https://keramos-ceramica.vercel.app/",
   },
   {
     name: "Ahmad Zaheer",
@@ -122,7 +122,7 @@ export const PROJECTS: Project[] = [
       "Prisma",
       "NextAuth",
     ],
-    projectURL: "ahmadzaheer.dev",
+    projectURL: "https://ahmadzaheer.com",
   },
 ];
 
