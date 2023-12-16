@@ -6,6 +6,8 @@ import requestWrapper from "@/requestWrapper";
 
 export const POST = requestWrapper(async (request: NextRequest) => {
   const data = await request.json();
-  validateInput(SignUpFormSchema, data);
-  return Response.json(await signUpUser(data as SignUpFormSchemaType));
+  const validatedData = validateInput(SignUpFormSchema, data);
+  return Response.json(
+    await signUpUser(validatedData.data as SignUpFormSchemaType)
+  );
 });

@@ -19,3 +19,13 @@ model User {
 
   @@map(name: "users")
 }
+
+model Message {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  message   String
+  createdAt DateTime @default(now()) @map(name: "created_at")
+
+  @@map("messages")
+}

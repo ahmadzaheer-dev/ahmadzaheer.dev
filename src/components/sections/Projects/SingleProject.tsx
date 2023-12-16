@@ -1,9 +1,10 @@
 import { Project } from "@/types/types";
 import Image from "next/image";
-import { Github } from "lucide-react";
+// import { Github } from "lucide-react";
 import { ExternalLink } from "lucide-react";
 import { getHeadingStyles } from "@/components/commonUi/utils";
 import MacOsWrapper from "@/components/sections/Projects/MacOsWrapper";
+import Link from "next/link";
 
 type Props = {
   project: Project;
@@ -38,12 +39,18 @@ const SingleProject = ({ project }: Props) => {
               ))}
             </div>
             <div className="flex gap-2">
-              <div className="border border-bgColor rounded-md bg-white text-bgColor p-2.5 hover:bg-bgColor hover:border-bgColor transition-all hover:text-white">
-                <ExternalLink size={18} />
-              </div>
-              <div className="border border-bgColor rounded-md bg-white text-bgColor p-2.5 hover:bg-bgColor hover:border-bgColor transition-all hover:text-white">
+              {project.projectURL && (
+                <Link
+                  href={project.projectURL}
+                  className="border border-bgColor rounded-md bg-white text-bgColor p-2.5 hover:bg-bgColor hover:border-bgColor transition-all hover:text-white"
+                  target="_blank"
+                >
+                  <ExternalLink size={18} />
+                </Link>
+              )}
+              {/* <div className="border border-bgColor rounded-md bg-white text-bgColor p-2.5 hover:bg-bgColor hover:border-bgColor transition-all hover:text-white">
                 <Github size={18} />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
