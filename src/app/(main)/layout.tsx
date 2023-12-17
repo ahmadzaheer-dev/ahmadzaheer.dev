@@ -3,6 +3,7 @@ import { Ubuntu } from "next/font/google";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import "./globals.css";
+import CursorTrackingCircle from "@/components/CircleTrackingCursor";
 
 const ubuntu = Ubuntu({
   weight: ["300", "400", "500", "700"],
@@ -25,7 +26,11 @@ export default function RootLayout({
         className={`${ubuntu.className} bg-bgColor text-typo text-sm lg:text-base flex flex-col min-h-[100vh]`}
       >
         <Nav />
-        <main className="flex-1">{children}</main>
+
+        <main className="flex-1">
+          <CursorTrackingCircle>{children}</CursorTrackingCircle>
+        </main>
+
         <Footer />
       </body>
     </html>

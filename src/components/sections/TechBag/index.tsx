@@ -13,7 +13,7 @@ const TechBag = () => {
         <h2
           className={cn(
             getHeadingStyles("h2"),
-            "mb-8 sm:mb-12 lg:mb-10 text-center"
+            "mb-8 sm:mb-12 lg:mb-10 text-center mix-blend-difference"
           )}
         >
           Skills & Technologies
