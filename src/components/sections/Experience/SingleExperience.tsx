@@ -19,7 +19,7 @@ const SingleExperience = ({ experience }: Props) => {
         <h3
           className={cn(
             getHeadingStyles("h3"),
-            "text-primary-green transition-all"
+            "text-primary-green transition-all mix-blend-difference"
           )}
         >
           {experience.position}

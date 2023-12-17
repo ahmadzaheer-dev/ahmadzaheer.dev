@@ -13,7 +13,7 @@ const Hero = () => {
     "before:bg-gradient-radial before:from-dim before:to-transparent before:from-0% before:to-70% before:content-[''] before:absolute before:h-full before:pl-[100%] before:top-0 before:left-0 before:-z-10";
   return (
     <div
-      className={`h-[80vh] flex items-center justify-center bg-[url('/images/hero-circle-bg.svg')] bg-cover ${radialBgGradientClasses}`}
+      className={`relative flex flex-col items-center bg-[url('/images/hero-circle-bg.svg')] bg-contain bg-no-repeat pt-52 pb-10 ${radialBgGradientClasses}`}
     >
       <MaxWidthWrapper className="mt-20">
         <div className="max-w-screen-lg mx-auto text-center">
@@ -31,7 +31,7 @@ const Hero = () => {
                     target="_blank"
                     key={platform.platform}
                   >
-                    <span className="hover:text-primary-green transition-all flex items-center gap-1">
+                    <span className="hover:text-primary-green transition-all flex items-center gap-1 mix-blend-difference">
                       <SocialIcon size={16} /> {platform.platform}
                     </span>
                   </Link>
@@ -39,19 +39,29 @@ const Hero = () => {
               })}
             </div>
           </div>
-          <h1 className={cn(getHeadingStyles("h2"), "font-normal")}>
+          <h1
+            className={cn(
+              getHeadingStyles("h2"),
+              "font-normal mix-blend-difference"
+            )}
+          >
             Hi! I am{" "}
             <span className="font-bold text-primary-green">Ahmad.</span>
           </h1>
-          <h2 className={cn(getHeadingStyles("h1"), "no-underline font-bold")}>
+          <h2
+            className={cn(
+              getHeadingStyles("h1"),
+              "no-underline font-bold mix-blend-difference"
+            )}
+          >
             Full Stack <span className="text-primary-green">Web Engineer</span>
           </h2>
-          <p className="font-light text-typo-body mb-10 max-w-prose mx-auto">
+          <p className="font-light text-typo-body mb-10 max-w-prose mx-auto mix-blend-difference">
             Motivated Full Stack Engineer with over a year of experience aiming
             to contribute to team success through hard work and excellent
             development, debugging and leadership skills.
           </p>
-          <div className="relative inline-flex gap-3 items-center before:content-[''] before:absolute before:h-24 before:w-24 before:bg-[url('/images/scribble.png')] before:-top-14 before:-left-24 before:bg-contain before:bg-center before:bg-no-repeat">
+          <div className="relative inline-flex gap-3 items-center before:content-[''] before:absolute before:h-24 before:w-24 before:bg-[url('/images/scribble.png')] before:-top-14 before:-left-24 before:bg-contain before:bg-center before:bg-no-repeat mb-20">
             <Button
               type="link"
               href="/#contact"
