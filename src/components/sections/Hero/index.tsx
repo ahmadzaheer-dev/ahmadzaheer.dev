@@ -13,7 +13,7 @@ const Hero = () => {
     "before:bg-gradient-radial before:from-dim before:to-transparent before:from-0% before:to-70% before:content-[''] before:absolute before:h-full before:pl-[100%] before:top-0 before:left-0 before:-z-10";
   return (
     <div
-      className={`relative flex flex-col items-center bg-[url('/images/hero-circle-bg.svg')] bg-contain bg-no-repeat pt-52 pb-10 ${radialBgGradientClasses}`}
+      className={`relative flex flex-col items-center bg-[url('/images/hero-triangle-bg.png')] bg-contain bg-bottom bg-no-repeat pt-52 pb-32 ${radialBgGradientClasses}`}
     >
       <MaxWidthWrapper className="mt-20">
         <div className="max-w-screen-lg mx-auto text-center">
