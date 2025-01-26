@@ -19,7 +19,7 @@ export type Experience = {
   position: string;
   roleType: "Full Time" | "Intern" | "Part time";
   startDate: Date;
-  endDate: Date;
+  endDate: Date | string;
   description: string;
   points: { title?: string; description: string }[];
   technologies: string[];
