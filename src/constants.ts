@@ -65,7 +65,7 @@ export const EXPERIENCE: Experience[] = [
     position: "Software Engineer II",
     roleType: "Full Time",
     startDate: new Date(2024, 4 - 1),
-    endDate: new Date(2024, 9 - 1, 30),
+    endDate: "Current",
     description:
       "As a Software Engineer II, I was responsible for developing the frontend of the Broker App using React.js and MUI. I collaborated with a team of five and led the frontend development, designing the app's architecture, including data fetching, global state management with context, and error handling.",
     points: [
