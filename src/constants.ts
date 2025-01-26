@@ -20,6 +20,83 @@ export const NAV_ITEMS = [
 
 export const EXPERIENCE: Experience[] = [
   {
+    companyName: "Netsol Technologies",
+    position: "Team Lead | Software Engineer II",
+    roleType: "Full Time",
+    startDate: new Date(2024, 10 - 1),
+    endDate: "Current",
+    description:
+      "As a Team lead, I have been proactively working on shaping the technical side of the product. From leading the technical side in grooming sessions to writing quality code and conducting high quality code reviews.",
+    points: [
+      {
+        title: "Siemens",
+        description:
+          "Collaborated with the integrations team in order to integrate the Siemens for submitting deals. Moreover wrote a routing system that routes the deals to different providers depending upon certain criteria",
+      },
+      {
+        title: "Grooming Sessions",
+        description:
+          "I actively participate in the grooming sessions, discuss and shape the technical side of the product.",
+      },
+      {
+        title: "Notification System",
+        description:
+          "I have designed and implemented the notification system, generating email notification on occurrence of key events in our app. Wrote an optimized cron job that sends email notifications depending upon the different deal criteria",
+      },
+      {
+        title: "Code Reviews",
+        description:
+          "Conducted thorough code reviews (both frontend & backend) enabling my team to ship high quality code to production",
+      },
+    ],
+    technologies: [
+      "Reactjs",
+      "FastAPI",
+      "Postgres",
+      "Sqlalchemy",
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "MUI",
+    ],
+  },
+  {
+    companyName: "Netsol Technologies",
+    position: "Software Engineer II",
+    roleType: "Full Time",
+    startDate: new Date(2024, 4 - 1),
+    endDate: "Current",
+    description:
+      "As a Software Engineer II, I was responsible for developing the frontend of the Broker App using React.js and MUI. I collaborated with a team of five and led the frontend development, designing the app's architecture, including data fetching, global state management with context, and error handling.",
+    points: [
+      {
+        title: "Quotation Control",
+        description:
+          "Architected the Quotation Control module and published it to the private npm registry for reuse across multiple microfrontends.",
+      },
+      {
+        title: "Workflows",
+        description:
+          "Designed and implemented dynamic, URL-based workflows on the frontend, enabling admin configuration while ensuring workflow integrity and restricting unauthorized URL access.",
+      },
+      {
+        title: "Code Reviews",
+        description:
+          "Conducted thorough code reviews (both frontend & backend) to ensure high-quality code was deployed to production",
+      },
+    ],
+    technologies: [
+      "Reactjs",
+      "FastAPI",
+      "Postgres",
+      "Sqlalchemy",
+      "Python",
+      "JavaScript",
+      "TypeScript",
+      "MUI",
+    ],
+  },
+  {
     companyName: "Educative",
     position: "Software Engineer",
     roleType: "Full Time",
