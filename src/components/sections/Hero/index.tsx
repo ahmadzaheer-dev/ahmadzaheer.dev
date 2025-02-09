@@ -21,11 +21,11 @@ const Hero = () => {
   return (
     <div className="relative">
       <motion.div
-        className="bg-[url('/images/hero-triangle-bg.png')] bg-contain bg-top bg-no-repeat absolute inset-0"
+        className="bg-[url('/images/hero-triangle-bg.png')] bg-contain bg-center bg-no-repeat absolute inset-0"
         style={{ scale: imageScale }}
       ></motion.div>
       <MaxWidthWrapper
-        className={`flex flex-col items-center justify-center h-screen pt-20 ${radialBgGradientClasses}`}
+        className={`flex flex-col items-center justify-center h-[80vh] md:h-screen pt-20 ${radialBgGradientClasses}`}
       >
         <motion.div
           className="max-w-screen-lg mx-auto text-center"
@@ -70,9 +70,9 @@ const Hero = () => {
           >
             Full Stack <span className="text-primary-green">Web Engineer</span>
           </h2>
-          <p className="font-light text-typo-body mb-10 max-w-prose mx-auto mix-blend-difference">
-            Motivated Full Stack Engineer with over a year of experience aiming
-            to contribute to team success through hard work and excellent
+          <p className="text-md mb-10 max-w-prose mx-auto mix-blend-difference">
+            Motivated Full Stack Engineer with years of experience aiming to
+            contribute to team success through hard work and excellent
             development, debugging and leadership skills.
           </p>
           <div className="relative inline-flex gap-3 items-center before:content-[''] before:absolute before:h-24 before:w-24 before:bg-[url('/images/scribble.png')] before:-top-14 before:-left-24 before:bg-contain before:bg-center before:bg-no-repeat mb-20">

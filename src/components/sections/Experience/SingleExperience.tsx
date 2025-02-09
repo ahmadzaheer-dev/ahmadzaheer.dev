@@ -33,8 +33,8 @@ const getTimeString = (experience: Experience) => {
 const SingleExperience = ({ experience }: Props) => {
   return (
     <div className="relative p-4 sm:p6 lg:p-8 mb-10 rounded-xl bg-dim/60 flex transition-all border border-dim">
-      <div>
-        <div className="mb-3 uppercase basis-1/6 pt-2 text-typo-body hidden sm:inline">
+      <div className="hidden sm:inline">
+        <div className="mb-3 uppercase basis-1/6 pt-2 text-typo-body">
           {`${getDateFormatted(experience.startDate)} - ${
             typeof experience.endDate === "string"
               ? experience.endDate
