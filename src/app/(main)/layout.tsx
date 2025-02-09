@@ -25,12 +25,10 @@ export default function RootLayout({
       <body
         className={`${ubuntu.className} bg-bgColor text-typo text-sm lg:text-base flex flex-col min-h-[100vh]`}
       >
-        <Nav />
-
-        <main className="flex-1">
-          <CursorTrackingCircle>{children}</CursorTrackingCircle>
-        </main>
-
+        <CursorTrackingCircle>
+          <Nav />
+          <main className="flex-1">{children}</main>
+        </CursorTrackingCircle>
         <Footer />
       </body>
     </html>

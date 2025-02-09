@@ -7,16 +7,30 @@ import Button from "@/ui/Button";
 import { ArrowDownToLine } from "lucide-react";
 import { SOCIALS } from "@/constants";
 import Link from "next/link";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const Hero = () => {
+  const { scrollY } = useScroll();
+
   const radialBgGradientClasses =
     "before:bg-gradient-radial before:from-dim before:to-transparent before:from-0% before:to-70% before:content-[''] before:absolute before:h-full before:pl-[100%] before:top-0 before:left-0 before:-z-10";
+
+  const imageScale = useTransform(scrollY, [0, 500], [1, 1.2]);
+  const textTranslateY = useTransform(scrollY, [0, 300], [0, 80]);
+
   return (
-    <div
-      className={`relative flex flex-col items-center bg-[url('/images/hero-triangle-bg.png')] bg-contain bg-bottom bg-no-repeat pt-52 pb-32 ${radialBgGradientClasses}`}
-    >
-      <MaxWidthWrapper className="mt-20">
-        <div className="max-w-screen-lg mx-auto text-center">
+    <div className="relative">
+      <motion.div
+        className="bg-[url('/images/hero-triangle-bg.png')] bg-contain bg-center bg-no-repeat absolute inset-0"
+        style={{ scale: imageScale }}
+      ></motion.div>
+      <MaxWidthWrapper
+        className={`flex flex-col items-center justify-center h-[80vh] md:h-screen pt-20 ${radialBgGradientClasses}`}
+      >
+        <motion.div
+          className="max-w-screen-lg mx-auto text-center"
+          style={{ y: textTranslateY }}
+        >
           <div className="inline-flex items-center mb-5 mx-auto gap-3">
             <div
               style={{ backgroundImage: "url('/images/dp.jpeg')" }}
@@ -56,9 +70,9 @@ const Hero = () => {
           >
             Full Stack <span className="text-primary-green">Web Engineer</span>
           </h2>
-          <p className="font-light text-typo-body mb-10 max-w-prose mx-auto mix-blend-difference">
-            Motivated Full Stack Engineer with over a year of experience aiming
-            to contribute to team success through hard work and excellent
+          <p className="text-md mb-10 max-w-prose mx-auto mix-blend-difference">
+            Motivated Full Stack Engineer with years of experience aiming to
+            contribute to team success through hard work and excellent
             development, debugging and leadership skills.
           </p>
           <div className="relative inline-flex gap-3 items-center before:content-[''] before:absolute before:h-24 before:w-24 before:bg-[url('/images/scribble.png')] before:-top-14 before:-left-24 before:bg-contain before:bg-center before:bg-no-repeat mb-20">
@@ -77,7 +91,7 @@ const Hero = () => {
               iconProps={{ size: 20 }}
             />
           </div>
-        </div>
+        </motion.div>
       </MaxWidthWrapper>
     </div>
   );
