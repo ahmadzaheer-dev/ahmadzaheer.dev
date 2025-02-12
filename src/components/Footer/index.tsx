@@ -28,7 +28,9 @@ const Footer = () => {
       </div>
       <div className="bg-dim/60 border-t border-dim">
         <MaxWidthWrapper className="py-5 flex flex-col gap-5 sm:flex-row items-center justify-between">
-          <span>© 2024 Ahmad Zaheer. All Rights Reserved.</span>
+          <span>
+            © {new Date().getFullYear()} Ahmad Zaheer. All Rights Reserved.
+          </span>
           <div>
             <Socials />
           </div>

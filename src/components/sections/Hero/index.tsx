@@ -19,7 +19,7 @@ const Hero = () => {
   const textTranslateY = useTransform(scrollY, [0, 300], [0, 80]);
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       <motion.div
         className="bg-[url('/images/hero-triangle-bg.png')] bg-contain bg-center bg-no-repeat absolute inset-0"
         style={{ scale: imageScale }}
