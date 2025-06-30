@@ -14,12 +14,13 @@ const getTimeString = (experience: Experience) => {
       ? new Date()
       : new Date(experience.endDate);
 
-  const totalMonths =
-    (endDate.getFullYear() - startDate.getFullYear()) * 12 +
-    (endDate.getMonth() - startDate.getMonth());
+  const diffTime = Math.abs(endDate.getTime() - startDate.getTime());
+  const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
-  const years = Math.floor(totalMonths / 12);
-  const months = totalMonths % 12;
+  const years = Math.floor(diffDays / 365);
+  const remainingDays = diffDays % 365;
+  const months = Math.floor(remainingDays / 30);
+
   if (!years) {
     return `${months} mos`;
   }

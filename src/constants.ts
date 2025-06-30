@@ -80,6 +80,11 @@ export const EXPERIENCE: Experience[] = [
           "Designed and implemented dynamic, URL-based workflows on the frontend, enabling admin configuration while ensuring workflow integrity and restricting unauthorized URL access.",
       },
       {
+        title: "Chat",
+        description:
+          "Implemented chat module between dealers and customers in order for them to communicate in app using emitter.io and javascript.",
+      },
+      {
         title: "Code Reviews",
         description:
           "Conducted thorough code reviews (both frontend & backend) to ensure high-quality code was deployed to production",
