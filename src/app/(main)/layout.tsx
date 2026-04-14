@@ -28,8 +28,8 @@ export default function RootLayout({
         <CursorTrackingCircle>
           <Nav />
           <main className="flex-1">{children}</main>
+          <Footer />
         </CursorTrackingCircle>
-        <Footer />
       </body>
     </html>
   );
