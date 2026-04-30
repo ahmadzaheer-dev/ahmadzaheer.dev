@@ -20,11 +20,26 @@ export const NAV_ITEMS = [
 
 export const EXPERIENCE: Experience[] = [
   {
+    companyName: "Bryntum",
+    position: "Javascript Engineer",
+    roleType: "Full Time",
+    startDate: new Date(2025, 10),
+    endDate: "Current",
+    description: "",
+    points: [],
+    technologies: [
+      "Javascript",
+      "Typescript",
+      "CSS",
+      "HTML",
+    ],
+  },
+  {
     companyName: "Netsol Technologies",
     position: "Team Lead | Software Engineer II",
     roleType: "Full Time",
     startDate: new Date(2024, 10 - 1),
-    endDate: "Current",
+    endDate: new Date(2025, 9),
     description:
       "As a Team lead, I have been proactively working on shaping the technical side of the product. From leading the technical side in grooming sessions to writing quality code and conducting high quality code reviews.",
     points: [
@@ -65,7 +80,7 @@ export const EXPERIENCE: Experience[] = [
     position: "Software Engineer II",
     roleType: "Full Time",
     startDate: new Date(2024, 4 - 1),
-    endDate: "Current",
+    endDate: new Date(2025, 9),
     description:
       "As a Software Engineer II, I was responsible for developing the frontend of the Broker App using React.js and MUI. I collaborated with a team of five and led the frontend development, designing the app's architecture, including data fetching, global state management with context, and error handling.",
     points: [
